@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section id="main">
+            <div class="calculator">
+                <p id="output" class="cal-input"></p>
+                <div class="box">
+                    <div class="btn-row">
+                        <button value="7" id="seven" class="btn">7</button>
+                        <button value="8" id="eit" class="btn">8</button>
+                        <button value="9" id="nine" class="btn">9</button>
+                        <button class="btn" id="remove">AC</button>
+                    </div>
+                    <div class="btn-row">
+                        <button  value="4" id="four" class="btn">4</button>
+                        <button  value="5" id="five" class="btn">5</button>
+                        <button  value="6" id="six" class="btn">6</button>
+                        <button id="arrows" class="btn arrow-btn"><i class='bx bx-chevron-left'></i></button>
+                    </div>
+                    <div class="main-row">
+                       <div class="first-row">
+                            <div class="inner-box">
+                                <button value="1" id="one" class="btn1">1</button>
+                                <button value="2" id="two" class="btn1">2</button>
+                                <button value="3" id="three" class="btn1">3</button>
+                            </div> 
+                            <div class="inner-box">
+                                <button id="deleteBtn" class="btn1"><i class='bx bxs-tag-x'></i></button>
+                                <button value="0" id="nol" class="btn1">0</button>
+                                <button value="." id="dot" class="btn1">.</button>
+                            </div>
+                       </div>
+                        <div class="second-row">
+                            <button id="equ" class="teng-btn">=</button>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button value="/" id="divide" class="btn">÷</button>
+                        <button value="*" id="kop" class="btn">x</button>
+                        <button value="-" id="minus" class="btn">-</button>
+                        <button value="+" id="plus" class="btn">+</button>
+                    </div>
+                </div>
+                <div class="big-box" id="modalBox">
+                    <div class="m-box1">
+                        <button id="openModalBtn" class="arrow-btn2"><i class='bx bx-chevron-left'></i></button>
+                    </div>
+                    <div class="modal-box">
+                        <div class="m-box">
+                            <button class="m-btn" id="sin">sin</button>
+                            <button class="m-btn" id="cos">cos</button>
+                            <button class="m-btn" id="tan">tan</button>
+                        </div>
+                        <div class="m-box">
+                            <button class="m-btn" id="fac">x!</button>
+                            <button value="3.1415" class="m-btn" id="pi">П</button>
+                            <button class="m-btn" id="log">log</button>
+                        </div>
+                        <div class="m-box">
+                            <button value="(" class="m-btn" id="qavs1">(</button>
+                            <button value=")" class="m-btn" id="qavs2">)</button>
+                            <button value="√" class="m-btn" id="root">√</button>
+                        </div>
+                        <div class="m-box">
+                            <button value="2.718281828459045" class="m-btn" id="eee">e</button>
+                            <button value="%" class="m-btn" id="foiz">%</button>
+                            <button class="m-btn" id="pow">^</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
